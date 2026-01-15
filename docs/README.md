@@ -1,9 +1,9 @@
-# LocalAI website
+# LocalAI 웹사이트
 
-LocalAI documentation website
+LocalAI 문서 웹사이트
 
-## Requirement
-In this project, the Docsy theme component is pulled in as a Hugo module, together with other module dependencies:
+## 요구 사항
+이 프로젝트에서 Docsy 테마 컴포넌트는 다른 모듈 의존성과 함께 Hugo 모듈로 가져옵니다:
 
 ```bash
 $ hugo mod graph
@@ -15,69 +15,60 @@ github.com/google/docsy/dependencies@v0.5.1-0.20221014161617-be5da07ecff1 github
 github.com/google/docsy/dependencies@v0.5.1-0.20221014161617-be5da07ecff1 github.com/FortAwesome/Font-Awesome@v0.0.0-20220831210243-d3a7818c253f
 ```
 
-If you want to do SCSS edits and want to publish these, you need to install `PostCSS`
+SCSS를 편집하고 게시하려면 `PostCSS`를 설치해야 합니다:
 
 ```bash
 npm install
 ```
 
-## Running the website locally
+## 로컬에서 웹사이트 실행하기
 
-Building and running the site locally requires a recent `extended` version of [Hugo](https://gohugo.io).
-You can find out more about how to install Hugo for your environment in our
-[Getting started](https://www.docsy.dev/docs/getting-started/#prerequisites-and-installation) guide.
+사이트를 로컬에서 빌드하고 실행하려면 최신 `extended` 버전의 [Hugo](https://gohugo.io)가 필요합니다.
+사용자의 개발 환경에 Hugo를 설치하는 방법에 대한 자세한 내용은 [시작하기](https://www.docsy.dev/docs/getting-started/#prerequisites-and-installation) 가이드를 참조하세요.
 
-Once you've made your working copy of the site repo, from the repo root folder, run:
+사이트 저장소의 작업 복사본이 준비되면 저장소 루트 폴더에서 다음을 실행하세요:
 
 ```
 hugo server
 ```
 
-## Running a container locally
+## 로컬에서 컨테이너 실행하기
 
-You can run docsy-example inside a [Docker](https://docs.docker.com/)
-container, the container runs with a volume bound to the `docsy-example`
-folder. This approach doesn't require you to install any dependencies other
-than [Docker Desktop](https://www.docker.com/products/docker-desktop) on
-Windows and Mac, and [Docker Compose](https://docs.docker.com/compose/install/)
-on Linux.
+[Docker](https://docs.docker.com/) 컨테이너 내에서 docsy-example을 실행할 수 있습니다. 컨테이너는 `docsy-example` 폴더에 바인딩된 볼륨과 함께 실행됩니다. 이 방식은 Windows 및 Mac의 경우 [Docker Desktop](https://www.docker.com/products/docker-desktop)을, Linux의 경우 [Docker Compose](https://docs.docker.com/compose/install/)만 설치하면 되며 다른 의존성은 필요하지 않습니다.
 
-1. Build the docker image 
+1. 도커 이미지 빌드
 
    ```bash
    docker-compose build
    ```
 
-1. Run the built image
+1. 빌드된 이미지 실행
 
    ```bash
    docker-compose up
    ```
 
-   > NOTE: You can run both commands at once with `docker-compose up --build`.
+   > 참고: `docker-compose up --build` 명령어로 두 명령을 한 번에 실행할 수 있습니다.
 
-1. Verify that the service is working. 
+1. 서비스가 작동하는지 확인합니다.
 
-   Open your web browser and type `http://localhost:1313` in your navigation bar,
-   This opens a local instance of the docsy-example homepage. You can now make
-   changes to the docsy example and those changes will immediately show up in your
-   browser after you save.
+   웹 브라우저를 열고 주소창에 `http://localhost:1313`을 입력합니다.
+   그러면 로컬 인스턴스의 docsy-example 홈페이지가 열립니다. 이제 docsy 예제를 변경할 수 있으며, 변경 사항은 저장 후 브라우저에 즉시 반영됩니다.
 
-### Cleanup
+### 정리 (Cleanup)
 
-To stop Docker Compose, on your terminal window, press **Ctrl + C**. 
+Docker Compose를 중지하려면 터미널 창에서 **Ctrl + C**를 누르세요.
 
-To remove the produced images run:
+생성된 이미지를 제거하려면 다음을 실행하세요:
 
 ```console
 docker-compose rm
 ```
-For more information see the [Docker Compose
-documentation](https://docs.docker.com/compose/gettingstarted/).
+더 자세한 내용은 [Docker Compose 문서](https://docs.docker.com/compose/gettingstarted/)를 참조하세요.
 
-## Troubleshooting
+## 문제 해결 (Troubleshooting)
 
-As you run the website locally, you may run into the following error:
+웹사이트를 로컬에서 실행할 때 다음과 같은 오류가 발생할 수 있습니다:
 
 ```
 ➜ hugo server
@@ -88,10 +79,10 @@ Built in 288 ms
 Error: Error building site: TOCSS: failed to transform "scss/main.scss" (text/x-scss): resource "scss/scss/main.scss_9fadf33d895a46083cdd64396b57ef68" not found in file cache
 ```
 
-This error occurs if you have not installed the extended version of Hugo.
-See this [section](https://www.docsy.dev/docs/get-started/docsy-as-module/installation-prerequisites/#install-hugo) of the user guide for instructions on how to install Hugo.
+이 오류는 Hugo의 extended 버전을 설치하지 않은 경우 발생합니다.
+Hugo 설치 방법은 사용자 가이드의 [이 섹션](https://www.docsy.dev/docs/get-started/docsy-as-module/installation-prerequisites/#install-hugo)을 참조하세요.
 
-Or you may encounter the following error:
+또는 다음과 같은 오류가 발생할 수 있습니다:
 
 ```
 ➜ hugo server
@@ -99,5 +90,5 @@ Or you may encounter the following error:
 Error: failed to download modules: binary with name "go" not found
 ```
 
-This error occurs if you have not installed the `go` programming language on your system.
-See this [section](https://www.docsy.dev/docs/get-started/docsy-as-module/installation-prerequisites/#install-go-language) of the user guide for instructions on how to install `go`.
+이 오류는 시스템에 `go` 프로그래밍 언어가 설치되어 있지 않은 경우 발생합니다.
+Go 설치 방법은 사용자 가이드의 [이 섹션](https://www.docsy.dev/docs/get-started/docsy-as-module/installation-prerequisites/#install-go-language)을 참조하세요.

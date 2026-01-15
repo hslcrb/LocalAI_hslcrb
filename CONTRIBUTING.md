@@ -1,99 +1,99 @@
-# Contributing to LocalAI
+# LocalAI 기여 가이드 (Contributing to LocalAI)
 
-Thank you for your interest in contributing to LocalAI! We appreciate your time and effort in helping to improve our project. Before you get started, please take a moment to review these guidelines.
+LocalAI 기여에 관심을 가져주셔서 감사합니다! 프로젝트 개선을 위한 여러분의 시간과 노력에 감사드립니다. 시작하기 전에 잠시 시간을 내어 다음 가이드라인을 검토해 주세요.
 
-## Table of Contents
+## 목차
 
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Setting up the Development Environment](#setting-up-the-development-environment)
-- [Contributing](#contributing)
-  - [Submitting an Issue](#submitting-an-issue)
-  - [Creating a Pull Request (PR)](#creating-a-pull-request-pr)
-- [Coding Guidelines](#coding-guidelines)
-- [Testing](#testing)
-- [Documentation](#documentation)
-- [Community and Communication](#community-and-communication)
+- [시작하기](#시작하기)
+  - [사전 요구 사항](#사전-요구-사항)
+  - [개발 환경 설정](#개발-환경-설정)
+- [기여하기](#기여하기)
+  - [이슈 제보](#이슈-제보)
+  - [풀 리퀘스트(PR) 생성](#풀-리퀘스트pr-생성)
+- [코딩 가이드라인](#코딩-가이드라인)
+- [테스트](#테스트)
+- [문서화](#문서화)
+- [커뮤니티 및 소통](#커뮤니티-및-소통)
 
-## Getting Started
+## 시작하기
 
-### Prerequisites
+### 사전 요구 사항
 
 - Golang [1.21]
 - Git
 - macOS/Linux
 
-### Setting up the Development Environment and running localAI in the local environment
+### 로컬 환경에서 개발 환경 설정 및 LocalAI 실행
 
-1. Clone the repository: `git clone https://github.com/go-skynet/LocalAI.git`
-2. Navigate to the project directory: `cd LocalAI`
-3. Install the required dependencies ( see https://localai.io/basics/build/#build-localai-locally )
-4. Build LocalAI: `make build`
-5. Run LocalAI: `./local-ai`
-6. To Build and live reload: `make build-dev`
+1. 저장소 클론: `git clone https://github.com/go-skynet/LocalAI.git`
+2. 프로젝트 디렉토리로 이동: `cd LocalAI`
+3. 필요한 의존성 설치 ( https://localai.io/basics/build/#build-localai-locally 참조 )
+4. LocalAI 빌드: `make build`
+5. LocalAI 실행: `./local-ai`
+6. 빌드 및 라이브 리로드(Live Reload): `make build-dev`
 
-## Contributing
+## 기여하기
 
-We welcome contributions from everyone! To get started, follow these steps:
+누구나 기여할 수 있습니다! 시작하려면 다음 단계를 따르세요:
 
-### Submitting an Issue
+### 이슈 제보
 
-If you find a bug, have a feature request, or encounter any issues, please check the [issue tracker](https://github.com/go-skynet/LocalAI/issues) to see if a similar issue has already been reported. If not, feel free to [create a new issue](https://github.com/go-skynet/LocalAI/issues/new) and provide as much detail as possible.
+버그를 발견하거나, 새로운 기능을 요청하거나, 문제를 겪고 있다면 [이슈 트래커](https://github.com/go-skynet/LocalAI/issues)를 확인하여 유사한 이슈가 이미 보고되었는지 확인해 주세요. 그렇지 않다면 [새로운 이슈를 생성](https://github.com/go-skynet/LocalAI/issues/new)하고 가능한 한 자세한 내용을 제공해 주세요.
 
-### Creating a Pull Request (PR)
+### 풀 리퀘스트(PR) 생성
 
-1. Fork the repository.
-2. Create a new branch with a descriptive name: `git checkout -b [branch name]`
-3. Make your changes and commit them.
-4. Push the changes to your fork: `git push origin [branch name]`
-5. Create a new pull request from your branch to the main project's `main` or `master` branch.
-6. Provide a clear description of your changes in the pull request.
-7. Make any requested changes during the review process.
-8. Once your PR is approved, it will be merged into the main project.
+1. 저장소를 포크(Fork)합니다.
+2. 설명이 포함된 이름으로 새 브랜치를 생성합니다: `git checkout -b [브랜치 이름]`
+3. 변경 사항을 만들고 커밋합니다.
+4. 포크한 저장소로 변경 사항을 푸시합니다: `git push origin [브랜치 이름]`
+5. 여러분의 브랜치에서 메인 프로젝트의 `main` 또는 `master` 브랜치로 새 풀 리퀘스트를 생성합니다.
+6. 풀 리퀘스트에 변경 사항에 대한 명확한 설명을 작성합니다.
+7. 리뷰 과정에서 요청된 변경 사항을 반영합니다.
+8. PR이 승인되면 메인 프로젝트에 병합됩니다.
 
-## Coding Guidelines
+## 코딩 가이드라인
 
-- No specific coding guidelines at the moment. Please make sure the code can be tested. The most popular lint tools like [`golangci-lint`](https://golangci-lint.run) can help you here.
+- 현재 특별한 코딩 가이드라인은 없습니다. 코드가 테스트 가능한지 확인해 주세요. [`golangci-lint`](https://golangci-lint.run)와 같은 인기 있는 린트 도구가 도움이 될 수 있습니다.
 
-## Testing
+## 테스트
 
-`make test` cannot handle all the model now. Please be sure to add a test case for the new features or the part was changed.
+`make test`는 현재 모든 모델을 처리할 수 없습니다. 새로운 기능이나 변경된 부분에 대해 반드시 테스트 케이스를 추가해 주세요.
 
-### Running AIO tests
+### AIO 테스트 실행
 
-All-In-One images has a set of tests that automatically verifies that most of the endpoints works correctly, a flow can be :
+All-In-One(AIO) 이미지에는 대부분의 엔드포인트가 올바르게 작동하는지 자동으로 확인하는 테스트 세트가 있습니다. 흐름은 다음과 같습니다:
 
 ```bash
-# Build the LocalAI docker image
+# LocalAI 도커 이미지 빌드
 make DOCKER_IMAGE=local-ai docker
 
-# Build the corresponding AIO image
+# 해당 AIO 이미지 빌드
 BASE_IMAGE=local-ai DOCKER_AIO_IMAGE=local-ai-aio:test make docker-aio
 
-# Run the AIO e2e tests
+# AIO e2e 테스트 실행
 LOCALAI_IMAGE_TAG=test LOCALAI_IMAGE=local-ai-aio make run-e2e-aio
 ```
 
-## Documentation
+## 문서화
 
-We are welcome the contribution of the documents, please open new PR or create a new issue. The documentation is available under `docs/` https://github.com/mudler/LocalAI/tree/master/docs
+문서 기여를 환영합니다. 새 PR을 열거나 새 이슈를 만들어 주세요. 문서는 `docs/` 아래에서 확인할 수 있습니다. https://github.com/mudler/LocalAI/tree/master/docs
 
-### Gallery YAML Schema
+### 갤러리 YAML 스키마
 
-LocalAI provides a JSON Schema for gallery model YAML files at:
+LocalAI는 다음 경로에서 갤러리 모델 YAML 파일에 대한 JSON 스키마를 제공합니다:
 
 `core/schema/gallery-model.schema.json`
 
-This schema mirrors the internal gallery model configuration and can be used by editors (such as VS Code) to enable autocomplete, validation, and inline documentation when creating or modifying gallery files.
+이 스키마는 내부 갤러리 모델 구성을 반영하며, 에디터(VS Code 등)에서 갤러리 파일을 만들거나 수정할 때 자동 완성과 유효성 검사, 인라인 문서를 활성화하는 데 사용할 수 있습니다.
 
-To use it with the YAML language server, add the following comment at the top of a gallery YAML file:
+YAML 언어 서버와 함께 사용하려면 갤러리 YAML 파일 상단에 다음 주석을 추가하세요:
 
 ```yaml
 # yaml-language-server: $schema=../core/schema/gallery-model.schema.json
 ```
 
-## Community and Communication
+## 커뮤니티 및 소통
 
-- You can reach out via the Github issue tracker.
-- Open a new discussion at [Discussion](https://github.com/go-skynet/LocalAI/discussions)
-- Join the Discord channel [Discord](https://discord.gg/uJAeKSAGDy)
+- Github 이슈 트래커를 통해 연락할 수 있습니다.
+- [Discussion](https://github.com/go-skynet/LocalAI/discussions)에서 새로운 토론을 시작하세요.
+- Discord 채널에 참여하세요 [Discord](https://discord.gg/uJAeKSAGDy)

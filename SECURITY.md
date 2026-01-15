@@ -1,42 +1,42 @@
-# Security Policy
+# 보안 정책 (Security Policy)
 
-## Introduction
+## 소개
 
-At LocalAI, we take the security of our software seriously. We understand the importance of protecting our community from vulnerabilities and are committed to ensuring the safety and security of our users.
+LocalAI는 소프트웨어의 보안을 소중하게 생각합니다. 우리는 취약점으로부터 커뮤니티를 보호하는 것의 중요성을 이해하고 있으며, 사용자의 안전과 보안을 보장하기 위해 최선을 다하고 있습니다.
 
-## Supported Versions
+## 지원되는 버전
 
-We provide support and updates for certain versions of our software. The following table outlines which versions are currently supported with security updates:
+우리는 소프트웨어의 특정 버전에 대해 지원 및 업데이트를 제공합니다. 다음 표는 현재 보안 업데이트가 지원되는 버전을 요약한 것입니다:
 
-| Version | Supported          |
+| 버전 | 지원 여부 |
 | ------- | ------------------ |
 | > 2.0   | :white_check_mark: |
 | < 2.0   | :x:                |
 
-Please ensure that you are using a supported version to receive the latest security updates.
+최신 보안 업데이트를 받으려면 지원되는 버전을 사용하고 있는지 확인하십시오.
 
-## Reporting a Vulnerability
+## 취약점 보고 방법
 
-We encourage the responsible disclosure of any security vulnerabilities. If you believe you've found a security issue in our software, we kindly ask you to follow the steps below to report it to us:
+보안 취약점에 대한 책임 있는 공개를 권장합니다. 우리 소프트웨어에서 보안 문제를 발견했다고 판단되는 경우, 다음 단계에 따라 보고해 주시기 바랍니다:
 
-1. **Email Us:** Send an email to [security@localai.io](mailto:security@localai.io) with a detailed report. Please do not disclose the vulnerability publicly or to any third parties before it has been addressed by us.
+1. **이메일 보내기:** 상세 보고서를 작성하여 [security@localai.io](mailto:security@localai.io)로 이메일을 보내주십시오. 당사에서 문제를 처리하기 전까지 취약점을 공개적으로 또는 제3자에게 공개하지 말아주십시오.
 
-2. **Expect a Response:** We aim to acknowledge receipt of vulnerability reports within 48 hours. Our security team will review your report and work closely with you to understand the impact and ensure a thorough investigation.
+2. **응답 대기:** 취약점 보고서를 수신한 후 48시간 이내에 확인 메일을 보내드리는 것을 목표로 합니다. 보안팀이 보고서를 검토하고 귀하와 긴밀히 협력하여 영향을 이해하고 철저한 조사를 진행할 것입니다.
 
-3. **Collaboration:** If the vulnerability is accepted, we will work with you and our community to address the issue promptly. We'll keep you informed throughout the resolution process and may request additional information or collaboration.
+3. **협력:** 취약점이 확인되면 신속하게 문제를 해결하기 위해 귀하 및 커뮤니티와 협력할 것입니다. 해결 프로세스 전반에 걸쳐 진행 상황을 알려드릴 것이며, 추가 정보나 협력을 요청할 수 있습니다.
 
-4. **Disclosure:** Once the vulnerability has been resolved, we encourage a coordinated disclosure. We believe in transparency and will work with you to ensure that our community is informed in a responsible manner.
+4. **공개:** 취약점이 해결되면 조율된 공개를 권장합니다. 우리는 투명성을 신뢰하며, 커뮤니티가 책임 있는 방식으로 정보를 제공받을 수 있도록 귀하와 협력할 것입니다.
 
-## Use of Third-Party Platforms
+## 제3자 플랫폼 사용
 
-As a Free and Open Source Software (FOSS) organization, we do not offer monetary bounties. However, researchers who wish to report vulnerabilities can also do so via [Huntr](https://huntr.dev/bounties), a platform that recognizes contributions to open source security.
+FOSS(자유 오픈 소스 소프트웨어) 조직으로서 금전적인 포상금(Bounty)을 제공하지는 않습니다. 그러나 취약점을 보고하려는 연구자는 오픈 소스 보안 기여를 인정해 주는 플랫폼인 [Huntr](https://huntr.dev/bounties)를 통해 보고할 수도 있습니다.
 
-## Contact
+## 연락처
 
-For any security-related inquiries beyond vulnerability reporting, please contact us at [security@localai.io](mailto:security@localai.io).
+취약점 보고 이외의 보안 관련 문의는 [security@localai.io](mailto:security@localai.io)로 문의해 주시기 바랍니다.
 
-## Acknowledgments
+## 감사의 말
 
-We appreciate the efforts of those who contribute to the security of our project. Your responsible disclosure is invaluable to the safety and integrity of LocalAI.
+프로젝트 보안에 기여해 주시는 분들의 노력에 감사드립니다. 귀하의 책임 있는 공개는 LocalAI의 안전과 무결성에 매우 소중합니다.
 
-Thank you for helping us keep LocalAI secure.
+LocalAI를 안전하게 유지하는 데 도움을 주셔서 감사합니다.
